@@ -1,6 +1,6 @@
 alias gi='git init'
 alias gst='git status -s'
-alias gl='git pull --rebase'
+alias gl='git smart-pull'
 alias gp='git push'
 alias gpa='git push-all' # see [alias] in ~/.gitconfig
 alias ga='git add'

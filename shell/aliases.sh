@@ -5,6 +5,7 @@ alias ..='cd ..;' # can then do .. .. .. to move up multiple directories.
 alias ...='.. ..'
 alias g='grep -i'  #case insensitive grep
 alias h='history|g'
+alias psg='ps aux | g'
 alias ducks='du -cks * | sort -rn |head -11' # Lists the size of all the folders
 alias top='top -o cpu'
 alias et="$EDITOR ."
