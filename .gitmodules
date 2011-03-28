@@ -130,3 +130,6 @@
 [submodule "vim/bundle/extradite"]
 	path = vim/bundle/extradite
 	url = https://github.com/int3/vim-extradite.git
+[submodule "vim/bundle/lusty"]
+	path = vim/bundle/lusty
+	url = https://github.com/sjbach/lusty.git
