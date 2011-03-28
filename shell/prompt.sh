@@ -42,7 +42,7 @@ function prompt_pwd() {
     else
       # Shorten the path as long as it isn't the last piece
       if [[ "$parts[${#parts}]" != "$part" ]]; then
-        parts[i]="$part[1,1]"
+        parts[i]="$part[1,2]"
       fi
     fi
   done
@@ -83,5 +83,4 @@ function precmd {
   PS1="$left [ "
   RPS1="] $right"
 }
-
 
