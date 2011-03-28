@@ -1,6 +1,7 @@
 alias gi='git init'
 alias gst='git status -s'
 alias gl='git smart-pull'
+alias gm='git merge --no-ff'
 alias gp='git push'
 alias gpa='git push-all' # see [alias] in ~/.gitconfig
 alias ga='git add'
