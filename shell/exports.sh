@@ -18,8 +18,11 @@ export IRBRC="$HOME/.irbrc"
 export JEWELER_OPTS="--rspec --gemcutter --rubyforge --reek --roodi"
 
 #export TERM=xterm-256color
-export GREP_OPTIONS='--color=auto' 
+export GREP_OPTIONS='--color=auto'
 export GREP_COLOR='1;32'
 export CLICOLOR=1
 
 export HISTSIZE=1000000
+
+export REPORTTIME=2
+export TIMEFMT="%U user %S system %P cpu %*Es total"
