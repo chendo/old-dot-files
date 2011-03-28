@@ -54,12 +54,12 @@ function precmd {
   vcs_info
 
   local cwd="$pr_blue`prompt_pwd`$pr_reset"
-  local char="%0(?.$pr_green.$pr_red)♪$pr_reset"
-  local time="$pr_grey⌚ %*$pr_reset"
+  local char="%0(?.$pr_green.$pr_red)➤$pr_reset"
+  local time="$pr_grey⎋ %*$pr_reset"
   local rvm="❖ `rvm-prompt`"
 
   local user_at_host
-  if [[ "$USER" != "bjeanes" ]]; then
+  if [[ "$USER" != "chendo" ]]; then
     user_at_host="$USER"
 
     if [[ "$user" == "root" ]] then
