@@ -2,6 +2,8 @@ require 'rake'
 
 desc "install the dot files into user's home directory"
 task :install do
+  puts "Fetching submodules..."
+  `git submodule update --init > /dev/null`
   replace_all = false
   dot_files   = File.dirname(__FILE__)
   files       = %w(zsh/zshrc
