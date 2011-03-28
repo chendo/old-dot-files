@@ -21,7 +21,22 @@ set number
 set ruler
 set guioptions=ce
 set mouse=a
-colorscheme railscasts
+colorscheme ir_black
+
+" MacVIM specific
+if has("gui_macvim")
+  set mousehide                   " Hide the mouse when typing text.
+  set guioptions=egm              " Show tabs, hide toolbar and scrollbar.
+  set fuoptions=maxvert,maxhorz   " Go to full width and height in full screen mode.
+
+  set gfn=Inconsolata:h15         " Inconsolata 15px for the font
+  set linespace=0                 " 0 pixels between lines
+
+  colorscheme ir_black
+
+  set transparency=5
+endif
+
 
 " Tabs/Whitespace
 set tabstop=2
@@ -249,7 +264,18 @@ map <C-\> :vsplit<CR>
 " Emacs-like keys for the command line
 cnoremap <C-A>      <Home>
 cnoremap <C-E>      <End>
-cnoremap <C-K>      <C-U>
+
+" Control + Space for Escape
+imap <C-space> <Esc>
+
+" Use CTRL-J and CTRL-K to skip forward and back through functions.
+map <C-K> [m
+map <C-J> ]m
+
+" Lusty shortcuts
+noremap ,a :LustyBufferExplorer<CR>
+noremap ,f :LustyFilesystemExplorer<CR>
+noremap ,r :LustyFilesystemExplorerFromHere<CR>
 
 set wildignore+=Transmission*Remote*GUI
 

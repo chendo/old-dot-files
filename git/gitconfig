@@ -1,9 +1,9 @@
 [user]
-  name = Bodaniel Jeanes
-  email = me@bjeanes.com
+  name = Jack Chen (chendo)
+  email = me@chen.do
 [merge]
   summary = true
-  tool = opendiff
+  tool = Kaleidoscope
 [alias]
   co = checkout
   put = push origin HEAD
@@ -23,6 +23,7 @@
 [branch]
   autosetupmerge = always
   autosetuprebase = local
+  mregeoptions = --no-ff
 [push]
   default = tracking
 [diff "ruby"]
