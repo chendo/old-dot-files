@@ -268,16 +268,18 @@ set backspace=indent,eol,start
 " Normal mode: <Leader>e
 map <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
 
-" Nicer split controls
-map <C-_> :split<CR>
-map <C-\> :vsplit<CR>
-
 " Emacs-like keys for the command line
 cnoremap <C-A>      <Home>
 cnoremap <C-E>      <End>
 
 " Control + Space for Escape
 imap <C-space> <Esc>
+
+" Control + ' (- on Dvorak) for backspace and Control + Command + ' to
+" delete word
+noremap! <C-_> <Backspace>
+noremap! <C-D--> <Esc>diwi
+noremap <C-D--> ciw
 
 " Use CTRL-J and CTRL-K to skip forward and back through functions.
 map <C-K> [mzz
