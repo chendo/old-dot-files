@@ -23,7 +23,7 @@
 [branch]
   autosetupmerge = always
   autosetuprebase = local
-  mregeoptions = --no-ff
+  mergeoptions = --no-ff
 [push]
   default = tracking
 [diff "ruby"]
