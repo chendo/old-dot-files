@@ -74,8 +74,16 @@ set wildignore+=*.o,*.obj,.git,*.rbc,*.swp
 
 " Status bar
 set laststatus=2
-
 set linespace=2
+
+" Searh results appear in middle of the screen
+nnoremap n nzz
+nnoremap N Nzz
+nnoremap * *zz
+nnoremap # #zz
+nnoremap g* g*zz
+nnoremap g# g#zz
+
 
 " NERDTree configuration
 let NERDTreeIgnore=['\.rbc$', '\~$']
@@ -272,8 +280,8 @@ cnoremap <C-E>      <End>
 imap <C-space> <Esc>
 
 " Use CTRL-J and CTRL-K to skip forward and back through functions.
-map <C-K> [m
-map <C-J> ]m
+map <C-K> [mzz
+map <C-J> ]mzz
 
 " Lusty shortcuts
 noremap ,a :LustyBufferExplorer<CR>
