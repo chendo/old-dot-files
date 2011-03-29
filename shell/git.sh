@@ -3,6 +3,7 @@ alias gst='git status -s'
 alias gl='git smart-pull'
 alias gm='git merge --no-ff'
 alias gp='git push'
+alias gd='git difftool'
 alias gpa='git push-all' # see [alias] in ~/.gitconfig
 alias ga='git add'
 alias gcl='git config --list'
@@ -18,10 +19,6 @@ alias grm="git stat | grep deleted | awk '{print $3}' | xargs git rm"
 alias gpatch='git diff master -p'
 alias glg="git log --decorate --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
 alias ignore_empty='find . \( -type d -empty \) -and \( -not -regex ./\.git.* \) -exec touch {}/.gitignore \;'
-
-function gd() {
-  git diff $* | mvim -
-}
 
 if [[ -d "/usr/local/git" ]]; then
   PATH="/usr/local/git/bin:$PATH"
