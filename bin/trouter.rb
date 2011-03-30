@@ -1,12 +1,16 @@
 #!/usr/bin/ruby
 # defaults write com.googlecode.iterm2 PathHandler <where you put this file>
-
+$debug = true
+if $debug
+  $stderr.reopen('/Users/chendo/trouter.log', 'a+')
+  $stdout.reopen('/Users/chendo/trouter.log', 'a+')
+end
 class Trouter
   class << self
     def go!
       path, ppid = *ARGV
 
-      path = path.gsub(/:(\d+)$/, '')
+      path = path.gsub(/:(\d+)(?::.+$)?/, '')
       line_number = $1
 
       path = "#{get_current_directory(ppid)}/#{path}" if !File.exists?(path)
@@ -17,8 +21,7 @@ class Trouter
     end
 
     def route(path, line_number)
-      puts "Routing #{path} line_number: #{line_number}"
-
+      puts "Routing #{path} line_number: #{line_number}" if $debug
       if File.directory?(path)
         `open #{path}`
       elsif `file #{path}` =~ /text/
@@ -33,6 +36,7 @@ class Trouter
     end
 
     def which_editor
+      return 'mvim'
       return 'mvim' if `which mvim` =~ /mvim/
       return 'txmt' if `which mate` =~ /mate/
       return nil
