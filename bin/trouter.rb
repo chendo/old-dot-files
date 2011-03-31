@@ -1,6 +1,6 @@
 #!/usr/bin/ruby
 # defaults write com.googlecode.iterm2 PathHandler <where you put this file>
-$debug = true
+$debug = `whoami` == 'chendo'
 if $debug
   $stderr.reopen('/Users/chendo/trouter.log', 'a+')
   $stdout.reopen('/Users/chendo/trouter.log', 'a+')
@@ -8,12 +8,10 @@ end
 class Trouter
   class << self
     def go!
-      path, ppid = *ARGV
+      path = ARGV.first
 
       path = path.gsub(/:(\d+)(?::.+$)?/, '')
       line_number = $1
-
-      path = "#{get_current_directory(ppid)}/#{path}" if !File.exists?(path)
 
       return if !File.exists?(path)
 
@@ -40,13 +38,6 @@ class Trouter
       return 'mvim' if `which mvim` =~ /mvim/
       return 'txmt' if `which mate` =~ /mate/
       return nil
-    end
-
-    protected
-
-    def get_current_directory(ppid)
-      pid = `ps -j | grep -w #{ppid} | grep -v grep`.split(/\s+/)[1]
-      `lsof -a -p #{pid} -d cwd -Fcn`.split(/\n/).last.gsub(/^n/, '')
     end
   end
 end
