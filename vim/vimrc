@@ -21,7 +21,7 @@ set number
 set ruler
 set guioptions=ce
 set mouse=a
-colorscheme ir_black
+colorscheme railscasts
 set hidden
 
 " MacVIM specific
@@ -32,8 +32,6 @@ if has("gui_macvim")
 
   set gfn=Monaco:h15         " Monaco 15px for the font
   set linespace=0            " 0 pixels between lines
-
-  colorscheme ir_black
 
   set transparency=5
 endif
