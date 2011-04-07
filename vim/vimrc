@@ -21,7 +21,7 @@ set number
 set ruler
 set guioptions=ce
 set mouse=a
-colorscheme railscasts
+colorscheme soruby
 set hidden
 
 " MacVIM specific
