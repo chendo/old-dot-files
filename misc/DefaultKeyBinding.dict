@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>@^-</key>
+	<string>deleteWordBackward:</string>
+	<key>@^c</key>
+	<string>moveUp:</string>
+	<key>@^h</key>
+	<string>moveLeft:</string>
+	<key>@^n</key>
+	<string>moveRight:</string>
+	<key>@^t</key>
+	<string>moveDown:</string>
+	<key>^-</key>
+	<string>deleteBackward:</string>
+	<key>^A</key>
+	<string>moveWordLeft:</string>
+	<key>^E</key>
+	<string>moveWordRight:</string>
+	<key></key>
+	<string>noop:</string>
+</dict>
+</plist>

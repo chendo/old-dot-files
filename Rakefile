@@ -29,11 +29,14 @@ task :install do
 
   files = Hash[files.zip(Array.new(files.size, "~/"))]
   files["ruby/global.gems"] = "~/.rvm/gemsets/"
+  files["misc/DefaultKeyBinding.dict"] = "~/Library/KeyBindings/"
 
   files.each do |file, destination|
     file_name        = file.split(/\//).last
     source_file      = File.join(dot_files, file)
-    destination_file = File.expand_path(File.join(destination, ".#{file_name}"))
+    add_dot = !file_name.match(/DefaultKeyBinding\.dict/) # Ugly hack
+
+    destination_file = File.expand_path(File.join(destination, "#{add_dot ? '.' : ''}#{file_name}"))
 
     if File.exist?(destination_file) || File.symlink?(destination_file)
       if replace_all
