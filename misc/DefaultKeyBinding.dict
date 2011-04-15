@@ -18,7 +18,5 @@
 	<string>moveWordLeft:</string>
 	<key>^E</key>
 	<string>moveWordRight:</string>
-	<key></key>
-	<string>noop:</string>
 </dict>
 </plist>
