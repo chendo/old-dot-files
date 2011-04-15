@@ -26,3 +26,5 @@ export HISTSIZE=1000000
 
 export REPORTTIME=2
 export TIMEFMT="%*Es total, %U user, %S system, %P cpu"
+
+export NODE_PATH="/usr/local/lib/node"
