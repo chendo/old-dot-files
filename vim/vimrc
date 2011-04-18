@@ -21,7 +21,7 @@ set number
 set ruler
 set guioptions=ce
 set mouse=a
-colorscheme soruby
+colorscheme molokai
 set hidden
 
 " MacVIM specific
@@ -33,7 +33,6 @@ if has("gui_macvim")
   set gfn=Monaco:h13         " Monaco 15px for the font
   set linespace=0            " 0 pixels between lines
 
-  set transparency=5
 endif
 
 " Commenting
