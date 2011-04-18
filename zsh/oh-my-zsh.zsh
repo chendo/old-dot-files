@@ -7,5 +7,6 @@ if [ -d "$ZSH" ]; then
 else
   echo "Cloning Oh My Zsh..."
   /usr/bin/env git clone git://github.com/robbyrussell/oh-my-zsh.git "$ZSH"
+  /usr/bin/env git clone git://github.com/nicoulaj/zsh-syntax-highlighting.git "$ZSH/plugins/zsh-syntax-highlighting"
   source $ZSH/oh-my-zsh.sh
 fi
