@@ -25,7 +25,6 @@ bindkey "\e\e[D" vi-backward-word
 # These are options I've copied but yet to totally investigate if it's what I want
 setopt alwaystoend             # when complete from middle, move cursor
 setopt completeinword          # not just at the end
-setopt correct                 # spelling correction
 setopt listpacked              # compact completion lists
 setopt noautomenu              # don't cycle completions
 setopt pushdignoredups         # and don't duplicate them
@@ -35,7 +34,6 @@ setopt nullglob
 # These are options that I definitely want
 setopt sharehistory
 setopt histverify              # when using ! cmds, confirm first
-setopt correct                 # spelling correction
 setopt rmstarwait              # if `rm *` wait 10 seconds before performing it!
 setopt notify                  # notify of BG job completion immediately
 setopt printexitvalue          # alert me if something's failed
