@@ -30,7 +30,7 @@ if has("gui_macvim")
   set guioptions=egm              " Show tabs, hide toolbar and scrollbar.
   set fuoptions=maxvert,maxhorz   " Go to full width and height in full screen mode.
 
-  set gfn=Monaco:h13         " Monaco 15px for the font
+  set gfn=Menlo:h13         " Monaco 15px for the font
   set linespace=0            " 0 pixels between lines
 
 endif
