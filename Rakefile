@@ -25,7 +25,9 @@ task :install do
                    hg/hgrc
                    vim
                    vim/gvimrc
-                   vim/vimrc)
+                   vim/vimrc
+                   bin
+                  )
 
   files = Hash[files.zip(Array.new(files.size, "~/"))]
   files["ruby/global.gems"] = "~/.rvm/gemsets/"
