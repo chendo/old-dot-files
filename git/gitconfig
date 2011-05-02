@@ -3,7 +3,7 @@
   email = me@chen.do
 [merge]
   summary = true
-  tool = Kaleidoscope
+  tool = opendiff
 [alias]
   co = checkout
   put = push origin HEAD
