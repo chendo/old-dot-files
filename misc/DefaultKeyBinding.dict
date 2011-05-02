@@ -4,6 +4,8 @@
 <dict>
 	<key>@^-</key>
 	<string>deleteWordBackward:</string>
+	<key>@^b</key>
+	<string>moveWordLeft:</string>
 	<key>@^c</key>
 	<string>moveUp:</string>
 	<key>@^h</key>
@@ -12,11 +14,9 @@
 	<string>moveRight:</string>
 	<key>@^t</key>
 	<string>moveDown:</string>
+	<key>@^w</key>
+	<string>moveWordRight:</string>
 	<key>^-</key>
 	<string>deleteBackward:</string>
-	<key>^A</key>
-	<string>moveWordLeft:</string>
-	<key>^E</key>
-	<string>moveWordRight:</string>
 </dict>
 </plist>
