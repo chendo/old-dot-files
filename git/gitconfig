@@ -21,8 +21,6 @@
   excludesfile = ~/.gitignore
   whitespace = fix
 [branch]
-  autosetupmerge = always
-  autosetuprebase = local
   mergeoptions = --no-ff
 [push]
   default = tracking
