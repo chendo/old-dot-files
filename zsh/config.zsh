@@ -34,7 +34,6 @@ setopt nullglob
 # These are options that I definitely want
 setopt sharehistory
 setopt histverify              # when using ! cmds, confirm first
-setopt rmstarwait              # if `rm *` wait 10 seconds before performing it!
 setopt notify                  # notify of BG job completion immediately
 setopt printexitvalue          # alert me if something's failed
 setopt autocd                  # change to dirs without cd
@@ -49,7 +48,8 @@ setopt nocompletealiases       # Allows alias 'ga' to use 'git add' completions 
 setopt interactivecomments     # escape commands so i can use them later
 setopt sh_word_split           # commands will be split on space (i.e. $VISUAL = "mate -wl1" will work)
 
-unsetopt correct_all # Fuck off
+# Fucking annoying.
+unsetopt correct_all
 
 # Allow kill word and moving forward/backword by word to behave like bash (e.g. stop at / chars)
 autoload -U select-word-style
