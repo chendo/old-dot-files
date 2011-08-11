@@ -2,7 +2,7 @@
   name = Jack Chen (chendo)
   email = me@chen.do
 [merge]
-  summary = true
+  summary = false
   tool = opendiff
 [alias]
   co = checkout
