@@ -46,4 +46,6 @@ Thumbs.db
 tmp*
 tmp/**/*
 doc/tags
+*.xcworkspace
+xcuserdata
 .livereload
