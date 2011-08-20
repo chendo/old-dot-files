@@ -1,8 +1,8 @@
-if $(which subl > /dev/null && false); then
+if $(which subl > /dev/null); then
   EDITOR="subl -w -n"
-elif $(which mate > /dev/null && false); then
+elif $(which mate > /dev/null); then
   EDITOR="mate -wl1"
-elif $(which nano > /dev/null && false); then
+elif $(which nano > /dev/null); then
   EDITOR="nano -w"
 elif $(which mvim > /dev/null); then
   EDITOR="mvim"
@@ -12,6 +12,7 @@ else
   EDITOR="vim"
 fi
 
+export EDITOR="$EDITOR"
 export VISUAL="$EDITOR"
 export GEM_OPEN_EDITOR="$EDITOR"
 export GIT_EDITOR="$EDITOR" # http://is.gd/hGrsF
