@@ -1,3 +1,5 @@
+if $(which subl > /dev/null && false); then
+  EDITOR="subl -w -n"
 if $(which mate > /dev/null && false); then
   EDITOR="mate -wl1"
 elif $(which nano > /dev/null && false); then
@@ -12,7 +14,7 @@ fi
 
 export VISUAL="$EDITOR"
 export GEM_OPEN_EDITOR="$EDITOR"
-export GIT_EDITOR="$(which mvim) -f" # http://is.gd/hGrsF
+export GIT_EDITOR="$EDITOR" # http://is.gd/hGrsF
 
 export IRBRC="$HOME/.irbrc"
 export JEWELER_OPTS="--rspec --gemcutter --rubyforge --reek --roodi"
