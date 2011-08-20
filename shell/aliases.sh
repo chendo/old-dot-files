@@ -6,7 +6,7 @@ alias h='history|g'
 alias psg='ps aux | g'
 alias ducks='du -cks * | sort -rn |head -11' # Lists the size of all the folders
 alias top='top -o cpu'
-alias ed="$EDITOR ."
+alias et="$EDITOR ."
 alias fp="filepath"
 alias e="$EDITOR"
 
