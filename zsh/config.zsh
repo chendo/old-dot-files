@@ -49,6 +49,8 @@ setopt nocompletealiases       # Allows alias 'ga' to use 'git add' completions 
 setopt interactivecomments     # escape commands so i can use them later
 setopt sh_word_split           # commands will be split on space (i.e. $VISUAL = "mate -wl1" will work)
 
+unsetopt correct_all # Fuck off
+
 # Allow kill word and moving forward/backword by word to behave like bash (e.g. stop at / chars)
 autoload -U select-word-style
 select-word-style bash

@@ -1,6 +1,6 @@
 if $(which subl > /dev/null && false); then
   EDITOR="subl -w -n"
-if $(which mate > /dev/null && false); then
+elif $(which mate > /dev/null && false); then
   EDITOR="mate -wl1"
 elif $(which nano > /dev/null && false); then
   EDITOR="nano -w"
@@ -30,3 +30,4 @@ export REPORTTIME=2
 export TIMEFMT="%*Es total, %U user, %S system, %P cpu"
 
 export NODE_PATH="/usr/local/lib/node"
+
