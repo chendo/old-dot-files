@@ -6,8 +6,9 @@ alias h='history|g'
 alias psg='ps aux | g'
 alias ducks='du -cks * | sort -rn |head -11' # Lists the size of all the folders
 alias top='top -o cpu'
-alias et="$EDITOR ."
+alias ed="$EDITOR ."
 alias fp="filepath"
+alias e="$EDITOR"
 
 alias sprof="reload"
 alias eprof="m $HOME/.config"

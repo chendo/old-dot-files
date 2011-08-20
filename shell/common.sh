@@ -1,4 +1,4 @@
-PATH="${HOME}/.bin:/usr/local/bin:/usr/local/sbin:/usr/X11/bin:/usr/bin:/usr/sbin:/bin:/sbin:${PATH}"
+export PATH="${HOME}/.bin:/usr/local/bin:/usr/local/sbin:/usr/X11/bin:/usr/bin:/usr/sbin:/bin:/sbin:${PATH}"
 CDPATH=".:${HOME}"
 
 source $DOT_FILES/$CURRENT_SHELL/config.*sh
