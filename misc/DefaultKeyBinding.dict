@@ -8,14 +8,14 @@
 	<string>moveWordLeft:</string>
 	<key>@^c</key>
 	<string>moveUp:</string>
+	<key>@^e</key>
+	<string>moveWordRight:</string>
 	<key>@^h</key>
 	<string>moveLeft:</string>
 	<key>@^n</key>
 	<string>moveRight:</string>
 	<key>@^t</key>
 	<string>moveDown:</string>
-	<key>@^w</key>
-	<string>moveWordRight:</string>
 	<key>^-</key>
 	<string>deleteBackward:</string>
 </dict>
